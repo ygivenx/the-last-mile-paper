@@ -1,0 +1,134 @@
+clinical_note_text_key,primary_mrn,service_date_key,text
+NOTE001,MRN001,20250210,"ONCOLOGY FOLLOW-UP NOTE
+
+Patient: Jane Doe
+Date of Visit: 02/10/2025
+
+HISTORY OF PRESENT ILLNESS:
+58-year-old female with metastatic non-small cell lung cancer, currently on cycle 4 of carboplatin/pemetrexed. She reports mild fatigue but is able to carry out all normal activities. No new symptoms.
+
+PHYSICAL EXAM:
+General: Well-appearing, no acute distress.
+ECOG Performance Status: 1
+Vitals: BP 128/78, HR 72, Temp 98.4F
+
+ASSESSMENT AND PLAN:
+1. Metastatic NSCLC - continue current regimen. Restaging CT scheduled in 2 weeks.
+2. Performance status remains good at ECOG 1. Tolerating therapy well.
+3. Follow-up in 3 weeks for cycle 5."
+NOTE002,MRN001,20250210,"NURSING ASSESSMENT
+
+Patient seen for chemotherapy infusion visit.
+KPS: 80
+Patient is able to carry on normal activity with effort. Some signs and symptoms of disease.
+Pre-medications administered as ordered. IV access obtained.
+Chemotherapy infusion started at 10:15 AM."
+NOTE003,MRN002,20250215,"PEDIATRIC ONCOLOGY NOTE
+
+Patient: John Smith (age 7)
+Date: 02/15/2025
+
+SUBJECTIVE:
+Mother reports child is playing actively but gets tired more quickly than usual. Eating well. No fevers.
+
+PERFORMANCE STATUS:
+Lansky Play Performance Scale: 80 - active, but tires more quickly
+
+ASSESSMENT:
+ALL in maintenance phase. Counts recovering nicely.
+Continue current maintenance protocol.
+Lansky 80, adequate for continued outpatient therapy."
+NOTE004,MRN003,20250220,"MEDICAL ONCOLOGY CONSULTATION
+
+Patient: Robert Johnson
+Date: 02/20/2025
+
+REASON FOR CONSULTATION: Newly diagnosed pancreatic adenocarcinoma.
+
+HPI:
+67-year-old male presenting with jaundice and weight loss. CT showed mass in head of pancreas. Biopsy confirmed adenocarcinoma.
+
+PHYSICAL EXAMINATION:
+General: Cachectic-appearing male. Ambulatory but unable to carry out work activities.
+ECOG Performance Status: 2
+KPS: 60
+
+IMPRESSION:
+Locally advanced pancreatic cancer, borderline resectable. Given ECOG 2 and KPS 60, patient is a candidate for modified FOLFIRINOX with dose reductions. Will discuss at tumor board."
+NOTE005,MRN004,20250225,"PROGRESS NOTE
+
+Patient: Sarah Williams
+Date: 02/25/2025
+
+Routine follow-up for breast cancer surveillance. Patient is 3 years post-treatment. Feeling well, exercising regularly, back to full-time work.
+
+Physical exam unremarkable.
+No evidence of disease recurrence.
+Continue annual surveillance imaging.
+Next visit in 6 months."
+NOTE006,MRN005,20250301,"PALLIATIVE CARE CONSULTATION
+
+Patient: Michael Brown
+Date: 03/01/2025
+
+REASON: Goals of care discussion for advanced gastric cancer with peritoneal carcinomatosis.
+
+Current functional status has declined significantly over past 2 weeks. Patient is now bedbound >50% of waking hours. Requires considerable assistance for self-care.
+
+Zubrod Score: 3
+WHO Performance Status: 3
+
+RECOMMENDATIONS:
+1. Transition to comfort-focused care given declining performance status (WHO PS 3).
+2. Hospice referral initiated.
+3. Symptom management optimized."
+NOTE007,MRN006,20250305,"HEMATOLOGY/ONCOLOGY NOTE
+
+Patient: Emily Davis
+Date: 03/05/2025
+
+68-year-old female with newly diagnosed multiple myeloma.
+
+Performance status assessment:
+PPS (Palliative Performance Scale): 70
+The patient is unable to do normal work but can manage self-care with occasional assistance.
+
+Plan: Start VRd (bortezomib, lenalidomide, dexamethasone).
+Pre-treatment labs and echocardiogram ordered."
+NOTE008,MRN007,20250310,"SURGICAL ONCOLOGY CLINIC
+
+Patient: David Martinez
+Date: 03/10/2025
+
+Post-operative visit - status post right hemicolectomy for colon cancer (pT3N1).
+
+Patient recovering well. Ambulating independently. Tolerating regular diet.
+ECOG: 1
+KPS: 90
+
+Pathology reviewed - recommend adjuvant FOLFOX. Referring to medical oncology.
+Wound healing well. Staples removed today."
+NOTE009,MRN002,20250315,"PEDIATRIC ONCOLOGY FOLLOW-UP
+
+Patient: John Smith (age 7)
+Date: 03/15/2025
+
+Maintenance chemotherapy visit. Mother reports child is very active, playing sports, attending school full time. No complaints.
+
+Lansky Play Performance Score: 90 - minor restrictions in physically strenuous play
+
+Labs drawn for monitoring. Continue maintenance protocol.
+Next visit in 4 weeks."
+NOTE010,MRN008,20250320,"RADIATION ONCOLOGY CONSULTATION
+
+Patient: Lisa Anderson
+Date: 03/20/2025
+
+72-year-old female with locally advanced cervical cancer.
+
+FUNCTIONAL ASSESSMENT:
+The patient is fully active, able to carry on all pre-disease performance without restriction.
+ECOG 0
+
+PLAN: Concurrent chemoradiation with weekly cisplatin.
+Simulation scheduled for next week. Treatment plan: 45 Gy in 25 fractions with brachytherapy boost."
