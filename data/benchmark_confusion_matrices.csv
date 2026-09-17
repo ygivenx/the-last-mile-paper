@@ -1,0 +1,36 @@
+# Model-selection benchmark ("bake-off") confusion matrices, released as the raw
+# inputs behind Table S1 so the published metrics are reproducible without PHI.
+#
+# Cohort:  447 clinical notes -> 126 evaluation records
+#          (all four models received the identical rule-based filtered input)
+# Unit:    one record is a (reference row x flagged note) pairing. 118 reference
+#          rows over 11 patients join to the notes for which the pipeline
+#          surfaced a value or a source span, giving 126 records. Five reference
+#          visits carry duplicate rows; each duplicate is treated as a separate
+#          abstraction record and scored on its own, and at one of them the
+#          duplicate rows disagree on Lansky (90 vs 100). A reference row with no
+#          flagged note is still evaluated and charged a false negative.
+# Task:    detection - was a score for this scale documented for this visit?
+#          A prediction of -1 (or no surfaced record) means "not documented".
+# tp: documented and surfaced   fn: documented but missed
+# fp: not documented but surfaced   tn: not documented and not surfaced
+#
+# inference_time_sec: wall-clock seconds for the whole Spark ai_query job over all
+#          447 notes, including the Delta write. Throughput, not per-request latency.
+#          Single un-warmed run on Databricks serverless.
+# api_errors: rows out of 447 where ai_query (failOnError => false) returned a
+#          non-null errorMessage, i.e. the serving endpoint failed or returned
+#          output that did not satisfy the JSON schema.
+model,model_endpoint,scale,tp,fp,tn,fn,inference_time_sec,api_errors
+Claude 3.7 Sonnet,databricks-claude-3-7-sonnet,ECOG,102,5,19,0,234.1,0
+Claude 3.7 Sonnet,databricks-claude-3-7-sonnet,KPS,55,0,71,0,234.1,0
+Claude 3.7 Sonnet,databricks-claude-3-7-sonnet,Lansky,12,0,112,2,234.1,0
+Llama 3.3 70B,databricks-meta-llama-3-3-70b-instruct,ECOG,102,5,19,0,20.5,0
+Llama 3.3 70B,databricks-meta-llama-3-3-70b-instruct,KPS,28,1,70,27,20.5,0
+Llama 3.3 70B,databricks-meta-llama-3-3-70b-instruct,Lansky,11,0,112,3,20.5,0
+GPT-OSS 20B,databricks-gpt-oss-20b,ECOG,97,3,21,5,39.4,5
+GPT-OSS 20B,databricks-gpt-oss-20b,KPS,34,1,70,21,39.4,5
+GPT-OSS 20B,databricks-gpt-oss-20b,Lansky,11,0,112,3,39.4,5
+GPT-OSS 120B,databricks-gpt-oss-120b,ECOG,102,4,20,0,32.1,0
+GPT-OSS 120B,databricks-gpt-oss-120b,KPS,46,0,71,9,32.1,0
+GPT-OSS 120B,databricks-gpt-oss-120b,Lansky,11,0,112,3,32.1,0
