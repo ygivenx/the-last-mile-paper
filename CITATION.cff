@@ -1,0 +1,46 @@
+cff-version: 1.2.0
+title: >-
+  Performance Status Extraction from Clinical Notes — analysis code for
+  "Bridging 'the Last Mile'"
+message: If you use this software, please cite both the software and the paper.
+type: software
+license: MIT
+repository-code: https://github.com/ygivenx/the-last-mile-paper
+authors:
+  - family-names: Yuravlivker
+    given-names: Leemor
+    affiliation: Memorial Sloan Kettering Cancer Center
+  - family-names: Singh
+    given-names: Rohan
+    affiliation: Memorial Sloan Kettering Cancer Center
+  - family-names: Kim
+    given-names: Bo Young
+    affiliation: Memorial Sloan Kettering Cancer Center
+  - family-names: Liebe
+    given-names: Brian
+    affiliation: Memorial Sloan Kettering Cancer Center
+  - family-names: Bouvier
+    given-names: Nancy
+    affiliation: Memorial Sloan Kettering Cancer Center
+# TODO before resubmission: archive a tagged release on Zenodo and paste the
+# concept DOI here (and in the manuscript's Code and Data Availability section).
+# doi: 10.5281/zenodo.XXXXXXX
+# version: 1.0.0
+# date-released: 2026-XX-XX
+preferred-citation:
+  type: article
+  title: >-
+    Bridging "the Last Mile": Human-Centered Design of an AI-Assisted Data
+    Abstraction Tool in Oncology Clinical Trials
+  authors:
+    - family-names: Yuravlivker
+      given-names: Leemor
+    - family-names: Singh
+      given-names: Rohan
+    - family-names: Kim
+      given-names: Bo Young
+    - family-names: Liebe
+      given-names: Brian
+    - family-names: Bouvier
+      given-names: Nancy
+  year: 2026
